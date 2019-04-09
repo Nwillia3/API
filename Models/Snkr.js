@@ -17,6 +17,10 @@ const SnkrSchema = new Schema({
   colorway: {
     type: [String], // array of strings
     required: true
+  },
+  name: {
+    type: String,
+    required: true
   }
 });
 
