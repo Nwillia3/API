@@ -2,11 +2,13 @@ const express = require("express");
 const mongoose = require("mongoose");
 
 const snkrs = require("./Routes/api/snkrs");
+const cors = require("cors");
 
 const app = express();
 
 //middleware
 app.use(express.json());
+app.use(cors);
 
 //DB config
 const db = require("./Config/keys").mongoURI;
